@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="card1"></div>
+  <div id="card2"></div>
+  <div id="card3"></div>
+  <div id="card4"></div>
+  <div id="card5"></div>
+  <div id="card6"></div>
+  <div id="card7"></div>
+  <div id="card8"></div>
+  <div id="card9"></div>
+  <div id="card10"></div>
+  <div id="card11"></div>
+  <div id="card12"></div>
+  <div id="card13"></div>
+  <div id="card14"></div>
+  <div id="card15"></div>
+  <div id="card16"></div>
+  <div id="card17"></div>
+  <div id="card18"></div>
+  <div id="powerchip"></div>
+  <div id="powerchip2"></div>
+  <div id="powerchip3"></div>
+  <div id="ScoreText">
+    <p id="p1"></p>
+  </div>
+  <div id="Lost">
+    <p id="p2"></p>
+  </div>
+  <div id="GameInstructions">
+    <p id="p3"></p>
+  </div>
+  <style>
+    
+  </style>
+  <script>
+    const backCards = ['Back1.png', 'Back2.png','Back3.png','Back4.png','Back5.png','Back6.png', 'Back7.png', 'Back8.png',]
+      
+    //Card 1
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '0px';
+    var container = document.getElementById('card1');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+      
+    //Card 2
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '110px';
+    var container = document.getElementById('card2');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 3
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '220px';
+    var container = document.getElementById('card3');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+    
+    //Card 4
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '330px';
+    var container = document.getElementById('card4');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 5
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '440px';
+    var container = document.getElementById('card5');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+    //Card 6
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '0px';  
+    img.style.left = '550px';
+    var container = document.getElementById('card6');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 7
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '0px';
+    var container = document.getElementById('card7');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 8
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '110px';
+    var container = document.getElementById('card8');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 9
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '220px';
+    var container = document.getElementById('card9');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 10
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '330px';
+    var container = document.getElementById('card10');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 11
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '440px';
+    var container = document.getElementById('card11');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 12
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '160px';  
+    img.style.left = '550px';
+    var container = document.getElementById('card12');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 13
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '0px';
+    var container = document.getElementById('card13');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 14
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '110px';
+    var container = document.getElementById('card14');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 15
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '220px';
+    var container = document.getElementById('card15');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 16
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '330px';
+    var container = document.getElementById('card16');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 17
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '440px';
+    var container = document.getElementById('card17');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+
+    //Card 18
+    var img = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img.src = backCards[randomCard];
+    img.height = 150;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '320px';  
+    img.style.left = '550px';
+    var container = document.getElementById('card18');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+    
+    
+    //Power Chip 1
+    var img = document.createElement('img');
+    img.src = 'powerChip.png';
+    img.height = 100;
+    img.width = 100;
+    img.style.position = 'absolute';
+    img.style.top = '480px';  
+    img.style.left = '0px';
+    var container = document.getElementById('powerchip');
+    container.style.position = 'absolute';
+    container.appendChild(img);
+    let containingElementPowerChip1 = document.querySelector('#powerchip');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElementPowerChip1.contains(event.target)) {
+          img.remove();
+          powerChipUsed.play();
+          allowSelection = true;
+      }
+    });
+
+    //Power Chip 2
+    var img2 = document.createElement('img');
+    img2.src = 'powerChip.png';
+    img2.height = 100;
+    img2.width = 100;
+    img2.style.position = 'absolute';
+    img2.style.top = '480px';  
+    img2.style.left = '110px';
+    var container = document.getElementById('powerchip2');
+    container.style.position = 'absolute';
+    container.appendChild(img2);
+
+    let containingElementPowerChip2 = document.querySelector('#powerchip2');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElementPowerChip2.contains(event.target)) {
+          img2.remove();
+          powerChipUsed.play();
+          allowSelection = true;
+      }
+    });
+
+    //Power Chip 3
+    var img3 = document.createElement('img');
+    var randomCard = Math.floor(Math.random() * 8);
+    img3.src = 'powerChip.png';
+    img3.height = 100;
+    img3.width = 100;
+    img3.style.position = 'absolute';
+    img3.style.top = '480px';  
+    img3.style.left = '220px';
+    var container = document.getElementById('powerchip3');
+    container.style.position = 'absolute';
+    container.appendChild(img3);
+    
+    let containingElementPowerChip3 = document.querySelector('#powerchip3');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElementPowerChip3.contains(event.target)) {
+          img3.remove();
+          powerChipUsed.play();
+          allowSelection = true;
+      }
+    });
+
+    //Array of card deck
+    const heartDeckImgs = ["2ofHearts.png", "3ofHearts.png", "4ofHearts.png" , "5ofHearts.png" , "6ofHearts.png" , "7ofHearts.png" , "8ofHearts.png", "9ofHearts.png" , "AceOfHearts.png", "10H.png", "JackOfHearts.png" , "KingOfHearts.png" , "QueenOfHearts.png",
+      "2ofClubs.png" , "2ofDiamonds.png" , "2ofSpades.png" , "3C.png" , "4C.png" , "5C.png" , "6C.png" , "7C.png" , "8C.png" , "9C.png" , "10C.png", "KC.png" , "JC.png" , "QC.png", "AC.png", "3S.png" , "4S.png" , "5S.png" , "6S.png" , "7S.png" , "8S.png",
+      "9S.png" , "10S.png", "AS.png" , "KS.png", "JS.png", "QS.png", "3D.png" , "4D.png" , "5D.png" , "6D.png" , "7D.png" ,"8D.png" , "9D.png" ,"10D.png", "KD.png" ,"QD.png" , "JD.png" , "AD.png" 
+    ];
+
+    //Initialize points to 0
+    let points = 0;
+  
+    //Set up sound function 
+    function sound(src) {
+      this.sound = document.createElement("audio");
+      this.sound.src = src;
+      this.sound.setAttribute("preload" , "auto");
+      this.sound.setAttribute("controls" , "none");
+      this.sound.style.display = "none";
+      document.body.appendChild(this.sound);
+      this.play = function() {
+        this.sound.play();
+      }
+      this.stop = function() {
+        this.sound.pause();
+      }
+  }
+      
+    //Assign sounds to various events
+    var cardFlip = new sound("flipcard-91468.mp3");
+    var gameover = new sound("gameover.mp3");
+    var powerChipUsed = new sound("powerchipused.mp3");
+    var cardCollected = new sound("cardselected.mp3");
+    var gameWon = new sound("gamewon.mp3");
+
+    //Initialize the current card
+    let currentCard = "";
+
+    //Check what card has been flipped and the numeric value of the card
+    function currentPoints(currentCard) {
+      if(currentCard == "2ofHearts.png" || currentCard == "2ofClubs.png" || currentCard == "2ofSpades.png" || currentCard == "2ofDiamonds.png"  ) {
+            points = 2; //Cards of 2 have 2 points
+          }else if (currentCard == "3ofHearts.png" || currentCard == "3C.png" ||currentCard == "3D.png" || currentCard == "3S.png" ){
+            points = 3; //Cards of 3 have 3 points
+          }else if(currentCard == "4ofHearts.png" || currentCard == "4C.png" ||currentCard == "4D.png" || currentCard == "4S.png") {
+            points = 4; //Cards of 4 have 4 points
+          }else if(currentCard == "5ofHearts.png" || currentCard == "5C.png" ||currentCard == "5D.png" || currentCard == "5S.png") {
+            points = 5; //Cards of 5 have 5 points
+          }else if(currentCard == "6ofHearts.png" || currentCard == "6C.png" ||currentCard == "6D.png" || currentCard == "6S.png") {
+            points = 6; //Cards of 6 have 6 points
+          }else if(currentCard == "7ofHearts.png" || currentCard == "7C.png" ||currentCard == "7D.png" || currentCard == "7S.png") {
+            points = 7; //Cards of 7 have 7 points
+          }else if(currentCard == "8ofHearts.png" || currentCard == "8C.png" ||currentCard == "8D.png" || currentCard == "8S.png") {
+            points = 8; //Cards of 8 have 8 points
+          }else if(currentCard == "9ofHearts.png" || currentCard == "9C.png" ||currentCard == "9D.png" || currentCard == "9S.png") {
+            points = 9; //Cards of 9 have 9 points
+          }else if(currentCard == "10H.png" || currentCard == "10C.png" || currentCard == "10D.png" || currentCard == "10S.png" ||
+            currentCard == "JackOfHearts.png" || currentCard == "JC.png" ||currentCard == "JD.png" || currentCard == "JS.png" || 
+            currentCard == "KingOfHearts.png" || currentCard == "KC.png" ||currentCard == "KD.png" || currentCard == "KS.png" ||
+            currentCard == "QueenOfHearts.png" || currentCard == "QC.png" ||currentCard == "QD.png" || currentCard == "QS.png") {
+            points = 10; //Face cards and cards of 10 have 10 points
+          }else if(currentCard == "AceOfHearts.png" || currentCard == "AC.png" ||currentCard == "AD.png" || currentCard == "AS.png") {
+            points = 1; //Ace hards have 1 point
+          }
+          return points;
+    }
+  
+    //Flip Card 1
+    function showCard() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      cardFlip.play();
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '0px';
+      var container = document.getElementById('card1');    
+    
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      
+      points = currentPoints(currentCard);
+      return points;
+    }
+
+    //Flip Card 2
+    function showCard2() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card2');
+      
+      cardFlip.play();
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '110px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard3() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card3');
+      cardFlip.play();
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '220px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+
+      points = currentPoints(currentCard);
+      return points;
+    }
+
+    function showCard4() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card4');
+      cardFlip.play();
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '330px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+
+      return points;
+    }
+    function showCard5() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card5');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '440px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+
+      return points;
+    }
+    function showCard6() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card6');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '0px'; 
+      img.style.left = '550px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard7() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card7');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '0px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard8() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card8');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '110px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard9() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card9');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '220px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard10() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52)
+      var container = document.getElementById('card10');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i]
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '330px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard11() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card11');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i]
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '440px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard12() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card12');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '160px'; 
+      img.style.left = '550px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard13() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card13');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '0px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard14() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card14');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '110px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard15() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card15');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '220px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+
+    function showCard16() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card16');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '330px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard17() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card17');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '440px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    function showCard18() {
+      var img = document.createElement('img');
+      var i = Math.floor(Math.random() * 52);
+      var container = document.getElementById('card18');
+      cardFlip.play();
+
+      img.src = heartDeckImgs[i];
+      currentCard = heartDeckImgs[i];
+      img.height = 150; 
+      img.width = 100;
+      img.style.position = 'absolute';
+      img.style.top = '320px'; 
+      img.style.left = '550px';
+  
+      container.style.position = 'absolute';
+      container.appendChild(img);
+      points = currentPoints(currentCard);
+      return points;
+    }
+    
+    //Set the boolean values of cards picked to false
+    var cardPicked1 = false;
+    var cardPicked2 = false;
+    var cardPicked3 = false;
+    var cardPicked4 = false;
+    var cardPicked5 = false;
+    var cardPicked6 = false;
+    var cardPicked7 = false;
+    var cardPicked8 = false;
+    var cardPicked9 = false;
+    var cardPicked10 = false;
+    var cardPicked11= false;
+    var cardPicked12= false;
+    var cardPicked13= false;
+    var cardPicked14= false;
+    var cardPicked15= false;
+    var cardPicked16= false;
+    var cardPicked17= false;
+    var cardPicked18= false;
+
+    //Set the boolean value of allow selection to true (user can select a card)
+    var allowSelection = true;
+
+    //Check if card 1 has been clicked
+    let containingElement = document.querySelector('#card1');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement.contains(event.target)) {
+        if(cardPicked1 == false && allowSelection == true) { //If user has not picked card 1 and user is allowed to select a card
+          cardPicked1 = true; //The card has now been picked
+          points = showCard(); //The card is flipped and the value of the card is saved
+          allowSelection = false; //The user cannot select another card
+      
+      }
+    }
+    });
+  
+    //Check if card 2 has been clicked
+    let containingElement2 = document.querySelector('#card2');
+    document.body.addEventListener('click' , function(event) {
+    if(containingElement2.contains(event.target)) {
+      if(cardPicked2 == false && allowSelection == true) { //If user has not picked card 2 and user is allowed to select a card
+        cardPicked2 = true; //The card has now been picked
+        points = showCard2(); //The card is flipped and the value of the card is saved
+        allowSelection = false; //The user cannot select another card       
+      }
+    }
+    });
+    
+    //Check if card 3 has been clicked
+    let containingElement3 = document.querySelector('#card3');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement3.contains(event.target)) {
+        if(cardPicked3 == false && allowSelection == true) {
+        cardPicked3 = true;
+        points = showCard3();
+        allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 4 has been clicked
+    let containingElement4 = document.querySelector('#card4');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement4.contains(event.target)) {
+        if(cardPicked4 == false && allowSelection == true) {
+        points = showCard4();
+        cardPicked4 = true;
+        allowSelection = false;
+        }
+      }
+    });
+    
+    //Check if card 5 has been clicked
+    let containingElement5 = document.querySelector('#card5');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement5.contains(event.target)) {
+        if(cardPicked5 == false && allowSelection == true) {
+        points = showCard5();
+        cardPicked5 = true;
+        allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 6 has been clicked
+    let containingElement6 = document.querySelector('#card6');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement6.contains(event.target)) {
+        if(cardPicked6 == false && allowSelection == true) {
+        points = showCard6();
+        cardPicked6 = true;
+        allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 7 has been clicked
+    let containingElement7 = document.querySelector('#card7');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement7.contains(event.target)) {
+        if(cardPicked7 == false && allowSelection == true) {
+        points = showCard7();
+        cardPicked7 = true;
+        allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 8 has been clicked
+    let containingElement8 = document.querySelector('#card8');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement8.contains(event.target)) {
+        if(cardPicked8 == false && allowSelection == true) {
+        points = showCard8();
+        cardPicked9 = true;
+        allowSelection = false;
+      }
+    }
+    });
+  
+    //Check if card 9 has been clicked
+    let containingElement9 = document.querySelector('#card9');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement9.contains(event.target)) {
+        if(cardPicked9 == false && allowSelection == true) {
+          points = showCard9();
+          cardPicked9 = true;
+          allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 10 has been clicked
+    let containingElement10 = document.querySelector('#card10');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement10.contains(event.target)) {
+        if(cardPicked10 == false && allowSelection == true) {
+          points = showCard10();
+          cardPicked10 = true;
+          allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 11 has been clicked
+    let containingElement11 = document.querySelector('#card11');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement11.contains(event.target)) {
+        if(cardPicked11 == false && allowSelection == true) {
+          points = showCard11();
+          cardPicked11 = true;
+          allowSelection = false;
+        
+      }
+    }
+    });
+    
+    //Check if card 12 has been clicked
+    let containingElement12 = document.querySelector('#card12');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement12.contains(event.target)) {
+        if(cardPicked12 == false && allowSelection == true) {
+          points = showCard12();
+          cardPicked12 = true;
+          allowSelection = false;
+      }
+    }
+    });
+    
+    //Check if card 13 has been clicked
+      let containingElement13 = document.querySelector('#card13');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElement13.contains(event.target)) {
+          if(cardPicked13 == false && allowSelection == true) {
+            points = showCard13();
+            cardPicked13 = true;
+            allowSelection = false;
+        }
+      }
+      });
+    
+    //Check if card 14 has been clicked
+      let containingElement14 = document.querySelector('#card14');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElement14.contains(event.target)) {
+          if(cardPicked14 == false && allowSelection == true) {
+            points = showCard14();
+            cardPicked14 = true;
+            allowSelection = false;
+        }
+      }
+      });
+    
+    //Check if card 15 has been clicked
+      let containingElement15 = document.querySelector('#card15');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElement15.contains(event.target)) {
+          if(cardPicked15 == false && allowSelection == true) {
+            points = showCard15();
+            cardPicked15 = true;
+            allowSelection = false;
+        }
+      }
+      });
+    
+    //Check if card 16 has been clicked
+      let containingElement16 = document.querySelector('#card16');
+      document.body.addEventListener('click' , function(event) {
+        if(containingElement16.contains(event.target)) {
+          if(cardPicked16 == false && allowSelection == true) {
+            points = showCard16();
+            cardPicked16 = true;
+            allowSelection = false;
+        }
+      }
+      });
+    
+    //Check if card 17 has been clicked
+    let containingElement17 = document.querySelector('#card17');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement17.contains(event.target)) {
+        if(cardPicked17 == false && allowSelection == true) {
+          points = showCard17();
+          cardPicked17 = true;
+          allowSelection = false;
+      }
+    }
+    });
+   
+    //Check if card 18 has been clicked
+    let containingElement18 = document.querySelector('#card18');
+    document.body.addEventListener('click' , function(event) {
+      if(containingElement18.contains(event.target)) {
+        if(cardPicked18 == false && allowSelection == true) {
+          points = showCard18();
+          cardPicked18 = true;
+          allowSelection = false;
+      }
+    }
+    });
+    
+    //Keep a counter for the score
+    let score = 0;    
+
+    //Showing the score text
+    const para = document.createElement("p");
+    const textNode = document.createTextNode("Score:" + score); //Show the current score
+    para.appendChild(textNode);
+    const element = document.getElementById("ScoreText");
+    para.style.position = 'fixed';
+    para.style.left = '400px';
+    para.style.top = '465px';
+    element.style.position = 'absolute';
+    element.style.fontFamily = "Courier New, monospace";
+    element.style.fontSize = '50px';
+    element.appendChild(para);
+  
+    //The user loses
+    function showGameOver() {
+      para.style.color = "Red"; //Set the text to red
+      para.innerHTML = "Game Over<br>Score: " + score; //Set the text to game over
+      gameover.play(); //Play the game over sound effect
+      alert("You Lost! Your final score was " + score + ". Click F5 to Play Again"); //Display to the user that they have lost, and what their final score is
+      allowSelection = false; //Do not allow the user to select another car
+    }
+
+    //The user wins
+    function showGameWon() {
+      para.style.color = "Green"; //Set the text to green
+      para.textContent = "Game Won"; //Set the text to game won
+      gameWon.play(); //Play the game won sound effect
+      alert("You caught 21 and won the game! Click F5 to Play Again"); //Display to the user that they have won the game
+      allowSelection = false; //Do not allow the user to select another card
+    }
+    
+    //Check to see if the user has added the card to their score
+    window.addEventListener("keydown" , checkKeyPressed , false);
+    function checkKeyPressed(evt) {
+      if (evt.keyCode == "13" && allowSelection == false) { //If the user has clicked the ENTER key and they have not previously added the value of the current card to the score
+        score += points; //Add the value of the current card to the score
+        para.textContent = ("Score:" + score);
+        allowSelection = true;
+        cardCollected.play(); //Play the card collected sound effect
+        if (score == 21) { //If the score is equal to 21
+          showGameWon(); //The user has won the game
+        }else if(score > 21) { //If the score is greater than 21
+          showGameOver(); //The user has lost the game
+        }
+      }
+    }
+
+    
+        
+    //Game instructions
+    const para2 = document.createElement("p");
+    const textNode2 = document.createTextNode("Catch 21: How to Play"); 
+    const textNode3 = document.createTextNode("The goal of the game is to 'catch 21'- Achieve a score of 21 exactly. Once you flip a card, you can: (a) Add the numeric value of that card to your score by clicking ENTER (b) Re-select another card (if you don’t want to add the card to your score) by clicking on a gold powerchip. You only have 3 power chips, so you can only re-select cards 3 times. Once you have added the card to your score or you have 'power chipped', you can now pick another card and repeat the process until you have a score of 21. If your final score is over 21, you LOSE. Note: The face cards (King, Jack, Queen) are worth 10. The Ace card is worth 1. ");
+    para2.appendChild(textNode2);
+    const element2 = document.getElementById("GameInstructions");
+    para2.style.position = 'fixed';
+    para2.style.left = '700px';
+    para2.style.top = '0px';
+    element2.style.position = 'absolute';
+    element2.style.fontFamily = "Courier New, monospace";
+    element2.style.fontSize = '40px';
+    element2.style.fontWeight = 'Bold';
+    element2.appendChild(para2);
+  
+    const para3 = document.createElement("p");
+    para3.appendChild(textNode3);
+    para3.style.position = 'fixed';
+    para3.style.left = '700px';
+    para3.style.top = '50px';
+    para3.style.marginRight = "70px";
+    element2.style.position = 'absolute';
+    element2.style.fontFamily = "Courier New, monospace";
+    element2.style.fontSize = '25px';
+    element2.style.fontWeight = 'Bold';
+    element2.appendChild(para3);
+      
+  </script>
+</body>
+</html>
