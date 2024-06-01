@@ -40,251 +40,273 @@
     
   </style>
   <script>
-    const backCards = ['Back1.png', 'Back2.png','Back3.png','Back4.png','Back5.png','Back6.png', 'Back7.png', 'Back8.png',]
+    //Create a list containing all the back sides of the cards
+    const backCards = ['Back1.png', 'Back2.png','Back3.png','Back4.png','Back5.png','Back6.png', 'Back7.png', 'Back8.png']
       
     //Card 1
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    var img = document.createElement('img'); //Create an image element
+    var randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
+    //Set image styles (height, width, position, top and left positions)
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '0px';
+    //Set the container to belong to the element card1
     var container = document.getElementById('card1');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
       
     //Card 2
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
+    //Set image styles (height, width, position, top and left positions)
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '110px';
-    var container = document.getElementById('card2');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card2
+    container = document.getElementById('card2');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 3
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img');  //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
+    //Set image styles (height, width, position, top and left positions)
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '220px';
-    var container = document.getElementById('card3');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card3
+    container = document.getElementById('card3'); 
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
     
     //Card 4
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '330px';
-    var container = document.getElementById('card4');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card4
+    container = document.getElementById('card4');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 5
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '440px';
-    var container = document.getElementById('card5');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card5
+    container = document.getElementById('card5');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
+    
     //Card 6
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '0px';  
     img.style.left = '550px';
-    var container = document.getElementById('card6');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card6
+    container = document.getElementById('card6');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 7
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '0px';
-    var container = document.getElementById('card7');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card7
+    container = document.getElementById('card7');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 8
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '110px';
-    var container = document.getElementById('card8');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card8
+    container = document.getElementById('card8');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 9
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '220px';
-    var container = document.getElementById('card9');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card9
+    container = document.getElementById('card9');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 10
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '330px';
-    var container = document.getElementById('card10');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card10
+    container = document.getElementById('card10');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 11
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '440px';
-    var container = document.getElementById('card11');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card11
+    container = document.getElementById('card11');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 12
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '160px';  
     img.style.left = '550px';
-    var container = document.getElementById('card12');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card12
+    container = document.getElementById('card12');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 13
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '0px';
-    var container = document.getElementById('card13');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card13
+    container = document.getElementById('card13');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 14
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '110px';
-    var container = document.getElementById('card14');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card14
+    container = document.getElementById('card14');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 15
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '220px';
-    var container = document.getElementById('card15');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card15
+    container = document.getElementById('card15');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 16
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '330px';
-    var container = document.getElementById('card16');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card16
+    container = document.getElementById('card16');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 17
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '440px';
-    var container = document.getElementById('card17');
-    container.style.position = 'absolute';
-    container.appendChild(img);
+    //Set the container to belong to the element card17
+    container = document.getElementById('card17');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
 
     //Card 18
-    var img = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
-    img.src = backCards[randomCard];
+    img = document.createElement('img'); //Create an image element
+    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    img.src = backCards[randomCard]; //Set the image link to the random index from the back cards list
     img.height = 150;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '320px';  
     img.style.left = '550px';
-    var container = document.getElementById('card18');
-    container.style.position = 'absolute';
-    container.appendChild(img);
-    
+    //Set the container to belong to the element card18
+    container = document.getElementById('card18');
+    container.style.position = 'absolute'; //Set position to absolute
+    container.appendChild(img); //Add image to the container
     
     //Power Chip 1
-    var img = document.createElement('img');
+    img = document.createElement('img'); //Create an img element
     img.src = 'powerChip.png';
     img.height = 100;
     img.width = 100;
     img.style.position = 'absolute';
     img.style.top = '480px';  
     img.style.left = '0px';
-    var container = document.getElementById('powerchip');
+    container = document.getElementById('powerchip');
     container.style.position = 'absolute';
     container.appendChild(img);
     let containingElementPowerChip1 = document.querySelector('#powerchip');
@@ -304,7 +326,7 @@
     img2.style.position = 'absolute';
     img2.style.top = '480px';  
     img2.style.left = '110px';
-    var container = document.getElementById('powerchip2');
+    container = document.getElementById('powerchip2');
     container.style.position = 'absolute';
     container.appendChild(img2);
 
@@ -319,14 +341,13 @@
 
     //Power Chip 3
     var img3 = document.createElement('img');
-    var randomCard = Math.floor(Math.random() * 8);
     img3.src = 'powerChip.png';
     img3.height = 100;
     img3.width = 100;
     img3.style.position = 'absolute';
     img3.style.top = '480px';  
     img3.style.left = '220px';
-    var container = document.getElementById('powerchip3');
+    container = document.getElementById('powerchip3');
     container.style.position = 'absolute';
     container.appendChild(img3);
     
