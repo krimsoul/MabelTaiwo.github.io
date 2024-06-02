@@ -40,7 +40,7 @@
     
   </style>
   <script>
-    //Create a array containing all the back sides of the cards
+    //Create an array containing all the back sides of the cards
     const backCards = ['Back1.png', 'Back2.png','Back3.png','Back4.png','Back5.png','Back6.png', 'Back7.png', 'Back8.png']
       
     //Card 1
@@ -59,7 +59,8 @@
     container.appendChild(img); //Add image to the container
       
     //Card 2
-    randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
+    var img = document.createElement('img'); //Create an image element
+    var randomCard = Math.floor(Math.random() * 8); //Allow randomCard to be equal to any value from 0 - 8
     img.src = backCards[randomCard]; //Set the image link to the random index from the back cards array
     //Set image styles (height, width, position, top and left positions)
     img.height = 150;
@@ -68,7 +69,7 @@
     img.style.top = '0px';  
     img.style.left = '110px';
     //Set the container to belong to the element card2
-    container = document.getElementById('card2');
+    var container = document.getElementById('card2');
     container.style.position = 'absolute'; //Set position to absolute
     container.appendChild(img); //Add image to the container
 
